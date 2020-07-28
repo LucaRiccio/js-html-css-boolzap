@@ -2,14 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>js-html-css-boolzap</title>
   </head>
   <body>
-
     <div class="container clearfix">
       <aside class="left-side">
         <div class="nav-aside">
@@ -21,19 +20,21 @@
           </div>
         </div>
         <div class="notifiche-aside">
-          <span><i class="fas fa-bell-slash"></i></span>
-          <p>testostssttst</p>
-          <p>testostssttst</p>
+          <span><i id= "bell" class="fas fa-bell-slash"></i></span>
+          <div class="testo-notifiche">
+            <h5>Ricevi notifiche di nuovi messaggi</h5>
+            <p>Attiva notifiche desktop</p>
+          </div>
         </div>
         <div class="ricerca">
-
+          <input id="aside-search" type="text" name="" value="" placeholder="Cerca o inizia una nuova chat">
         </div>
         <div class="contenuto-aside">
           <div class="icona">
             <img src="https://www.careerroof.com/assets/img/profile-img.png" alt="">
-            <div class="">
-              <p class="nome">LUCA</p>
-              <p class="messaggio">messaggio gne</p>
+            <div class="testo-icona">
+              <h4 class="nome">Michele</h4>
+              <p class="messaggio">Non poteve essere altrimenti</p>
             </div>
             <div class="orario">
               <p>17:53</p>
@@ -41,9 +42,9 @@
           </div>
           <div class="icona">
             <img src="https://www.careerroof.com/assets/img/profile-img.png" alt="">
-            <div class="">
-              <p class="nome">LUCA</p>
-              <p class="messaggio">messaggio gne</p>
+            <div class="testo-icona">
+              <h4 class="nome">Michele</h4>
+              <p class="messaggio">Non poteve essere altrimenti</p>
             </div>
             <div class="orario">
               <p>17:53</p>
@@ -51,9 +52,9 @@
           </div>
           <div class="icona">
             <img src="https://www.careerroof.com/assets/img/profile-img.png" alt="">
-            <div class="">
-              <p class="nome">LUCA</p>
-              <p class="messaggio">messaggio gne</p>
+            <div class="testo-icona">
+              <h4 class="nome">Michele</h4>
+              <p class="messaggio">Non poteve essere altrimenti</p>
             </div>
             <div class="orario">
               <p>17:53</p>
@@ -61,9 +62,9 @@
           </div>
           <div class="icona">
             <img src="https://www.careerroof.com/assets/img/profile-img.png" alt="">
-            <div class="">
-              <p class="nome">LUCA</p>
-              <p class="messaggio">messaggio gne</p>
+            <div class="testo-icona">
+              <h4 class="nome">Michele</h4>
+              <p class="messaggio">Non poteve essere altrimenti</p>
             </div>
             <div class="orario">
               <p>17:53</p>
@@ -71,9 +72,9 @@
           </div>
           <div class="icona">
             <img src="https://www.careerroof.com/assets/img/profile-img.png" alt="">
-            <div class="">
-              <p class="nome">LUCA</p>
-              <p class="messaggio">messaggio gne</p>
+            <div class="testo-icona">
+              <h4 class="nome">Michele</h4>
+              <p class="messaggio">Non poteve essere altrimenti</p>
             </div>
             <div class="orario">
               <p>17:53</p>
@@ -81,9 +82,9 @@
           </div>
           <div class="icona">
             <img src="https://www.careerroof.com/assets/img/profile-img.png" alt="">
-            <div class="">
-              <p class="nome">LUCA</p>
-              <p class="messaggio">messaggio gne</p>
+            <div class="testo-icona">
+              <h4 class="nome">Michele</h4>
+              <p class="messaggio">Non poteve essere altrimenti</p>
             </div>
             <div class="orario">
               <p>17:53</p>
@@ -91,40 +92,58 @@
           </div>
           <div class="icona">
             <img src="https://www.careerroof.com/assets/img/profile-img.png" alt="">
-            <div class="">
-              <p class="nome">LUCA</p>
-              <p class="messaggio">messaggio gne</p>
+            <div class="testo-icona">
+              <h4 class="nome">Michele</h4>
+              <p class="messaggio">Non poteve essere altrimenti</p>
+            </div>
+            <div class="orario">
+              <p>17:53</p>
+            </div>
+          </div>
+          <div class="icona">
+            <img src="https://www.careerroof.com/assets/img/profile-img.png" alt="">
+            <div class="testo-icona">
+              <h4 class="nome">Michele</h4>
+              <p class="messaggio">Non poteve essere altrimenti</p>
             </div>
             <div class="orario">
               <p>17:53</p>
             </div>
           </div>
         </div>
-
       </aside>
-
       <main class="right-side">
         <div class="nav-main">
-
+          <div class="nav-left">
+            <img src="https://www.careerroof.com/assets/img/profile-img.png" alt="">
+            <div class="testo">
+              <h4>Fabio</h4>
+              <p>Ultimo accesso oggi alle 15.40</p>
+            </div>
+          </div>
+          <div class="nav-right">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-comment-alt"></i></span>
+            <span><i class="fas fa-ellipsis-v"></i></span>
+          </div>
         </div>
         <div class="contenuto-main">
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
         </div>
-
         <div class="bottom-main">
-
+          <span><i class="far fa-smile"></i></span>
+          <span><input id="main-search" type="text" name="" value="" placeholder="Scrivi un messaggio"></span>
+          <span><i class="fas fa-microphone"></i></span>
         </div>
-
       </main>
     </div>
-
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

@@ -13,12 +13,17 @@
 body {
   position: relative;
   height: 100vh;
+  font-family: 'Mulish', sans-serif;
+  background: #06beb6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .container {
   position: absolute;
   width: 80%;
-  height: 500px;
+  height: 600px;
   background-color: lightgreen;
   top: 50%;
   left: 50%;
@@ -27,14 +32,14 @@ body {
 
 .left-side {
   float: left;
-  width: 30%;
-  height: 500px;
+  width: 35%;
+  height: 600px;
   background-color: red;
 }
 
-.left-side img {
-  width: 50px;
-  height: 50px;
+/* .left-side*/ img {
+  width: 55px;
+  height: 55px;
 }
 
 .nav-aside {
@@ -43,25 +48,56 @@ body {
   align-items: center;
   width: 100%;
   height: 70px;
-  background-color: tomato;
+  background-color: #eaeaea;
+  padding: 0 10px;
+  border-right: 1px solid lightgrey;
+}
+
+.destra > span > i {
+  font-size: 20px;
+  color: #b1b1b1;
+  padding-right: 10px;
 }
 
 .notifiche-aside {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 70px;
-  background-color: darkgrey;
+  background-color: #8edafc;
+}
+
+.testo-notifiche p {
+  font-size: 12px;
+  color: dimgrey;
+  text-decoration: underline;
+}
+
+#bell{
+  padding-left: 15px;
+  padding-right: 10px;
+  font-size: 20px;
 }
 
 .ricerca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 50px;
   background-color: whitesmoke;
 }
 
+#aside-search {
+  height: 35px;
+  width: 90%;
+  padding: 0px 10px;
+}
+
 .contenuto-aside {
   width: 100%;
   height: calc(100% - 190px);
-  background-color: purple;
+  background-color: white;
   overflow-y: scroll;
 }
 
@@ -69,31 +105,93 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid lightgrey;
+  background: white;
+}
+
+.testo-icona {
+  padding: 0px 70px 0px 15px;
+}
+
+.orario,
+.testo-icona p {
+  font-size: 12px;
+  color: darkgrey
 }
 
 .right-side {
-  width: 70%;
-  height: 500px;
+  width: 65%;
+  height: 600px;
   background-color: brown;
   float: left;
 }
 
 .nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 70px;
-  background-color: tomato;
+  background-color: #eaeaea;
+  padding: 0px 10px;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.testo {
+  padding-left: 15px;
+}
+
+.testo p {
+  color: dimgrey;
+  font-size: 12px;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-right > span > i {
+  font-size: 20px;
+  color: #b1b1b1;
+  padding-right: 15px;
 }
 
 .contenuto-main {
   width: 100%;
   height: calc(100% - 140px);
   overflow-y: scroll;
-  background-color: skyblue;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12ee6265-e947-474a-a378-6d78ab0d1117/d8fr7iz-082cab4c-3f87-47e1-b2f0-efdb504372e5.jpg/v1/fill/w_1024,h_576,q_75,strp/super_hero_whatsapp_background_by_x_ama_d8fr7iz-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01NzYiLCJwYXRoIjoiXC9mXC8xMmVlNjI2NS1lOTQ3LTQ3NGEtYTM3OC02ZDc4YWIwZDExMTdcL2Q4ZnI3aXotMDgyY2FiNGMtM2Y4Ny00N2UxLWIyZjAtZWZkYjUwNDM3MmU1LmpwZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.vMsSrJL87xcHSN4_yT8cSlEGqymaknC5rvamCRrnlGU');
+  background-color: ivory;
 }
 
 .bottom-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   height: 70px;
-  background-color: black;
+  background-color: #f3eeea;
+  border-left: 1px solid lightgrey;
+  padding: 0 15px;
+}
 
+.bottom-main i {
+  font-size: 20px;
+  color: dimgrey;
+}
+
+#main-search {
+  width: 550px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  border: 0px;
+  padding: 0 15px;
 }
