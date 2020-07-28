@@ -32,7 +32,15 @@ body {
   background-color: red;
 }
 
+.left-side img {
+  width: 50px;
+  height: 50px;
+}
+
 .nav-aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 70px;
   background-color: tomato;
@@ -55,6 +63,12 @@ body {
   height: calc(100% - 190px);
   background-color: purple;
   overflow-y: scroll;
+}
+
+.icona {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .right-side {
