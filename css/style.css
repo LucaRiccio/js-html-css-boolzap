@@ -17,14 +17,13 @@ body {
   background: #06beb6;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-size: contain;
 }
 
 .container {
   position: absolute;
   width: 80%;
   height: 600px;
-  background-color: lightgreen;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -34,10 +33,9 @@ body {
   float: left;
   width: 35%;
   height: 600px;
-  background-color: red;
 }
 
-/* .left-side*/ img {
+img {
   width: 55px;
   height: 55px;
 }
@@ -74,9 +72,21 @@ body {
 }
 
 #bell{
-  padding-left: 15px;
-  padding-right: 10px;
+  color: #8edafc;
   font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bell-container {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  margin: 0px 10px;
 }
 
 .ricerca {
@@ -86,12 +96,23 @@ body {
   width: 100%;
   height: 50px;
   background-color: whitesmoke;
+  position: relative;
+}
+
+#dio {
+  position: absolute;
+  left: 5%;
+  padding-left: 5px;
+  color: #b1b1b1;
 }
 
 #aside-search {
   height: 35px;
   width: 90%;
-  padding: 0px 10px;
+  padding: 0px 35px;
+  border: 0;
+  box-shadow: 0;
+
 }
 
 .contenuto-aside {
@@ -123,7 +144,6 @@ body {
 .right-side {
   width: 65%;
   height: 600px;
-  background-color: brown;
   float: left;
 }
 
@@ -164,34 +184,71 @@ body {
 }
 
 .contenuto-main {
-  width: 100%;
+  width: calc(100% - 1px);
   height: calc(100% - 140px);
+  padding-top: 35px;
   overflow-y: scroll;
   background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12ee6265-e947-474a-a378-6d78ab0d1117/d8fr7iz-082cab4c-3f87-47e1-b2f0-efdb504372e5.jpg/v1/fill/w_1024,h_576,q_75,strp/super_hero_whatsapp_background_by_x_ama_d8fr7iz-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01NzYiLCJwYXRoIjoiXC9mXC8xMmVlNjI2NS1lOTQ3LTQ3NGEtYTM3OC02ZDc4YWIwZDExMTdcL2Q4ZnI3aXotMDgyY2FiNGMtM2Y4Ny00N2UxLWIyZjAtZWZkYjUwNDM3MmU1LmpwZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.vMsSrJL87xcHSN4_yT8cSlEGqymaknC5rvamCRrnlGU');
   background-color: ivory;
 }
 
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 40%;
+  word-wrap: break-word;
+
+}
+
+.send {
+  float: left;
+  clear: both;
+  margin-left: 70px;
+  background-color: #d5f9bb;
+}
+
+.text-message {
+
+}
+
+.return {
+  float: right;
+  clear: both;
+  margin-right: 70px;
+  background-color: #ffffff;
+}
+
+.orario-message {
+  font-size: 10px;
+  color: darkgrey;
+  text-align: right;
+  margin-right: -5px;
+}
+
 .bottom-main {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 100%;
   height: 70px;
   background-color: #f3eeea;
   border-left: 1px solid lightgrey;
   padding: 0 15px;
 }
 
-.bottom-main i {
+.bottom-main span {
   font-size: 20px;
   color: dimgrey;
 }
 
 #main-search {
-  width: 550px;
+  width: 85%;
   height: 50px;
-  line-height: 50px;
   border-radius: 5px;
   border: 0px;
   padding: 0 15px;
+  margin: 0 20px;
 }
