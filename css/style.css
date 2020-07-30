@@ -244,11 +244,15 @@ img {
   color: dimgrey;
 }
 
-#main-search {
+#main-message {
   width: 85%;
   height: 50px;
   border-radius: 5px;
   border: 0px;
   padding: 0 15px;
   margin: 0 20px;
+}
+
+.template {
+  display: none;
 }
