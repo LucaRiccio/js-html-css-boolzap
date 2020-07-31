@@ -6,6 +6,19 @@ $(document).ready(function(){
     }
   })
 
+  $("#aside-search").keyup(function(){
+    var ricerca = $("#aside-search").val().toLowerCase();
+    // console.log(ricerca);
+    $(".icona").each(function(){
+      var x = $(this).find(".nome").text().toLowerCase();
+      if (x.includes(ricerca)){
+        $(this).show();
+      }else {
+        $(this).hide();
+      }
+    });
+  });
+
 
   //***FUNZIONI***
 
