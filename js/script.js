@@ -6,6 +6,7 @@ $(document).ready(function(){
     }
   })
 
+
   //***FUNZIONI***
 
   function invioMessaggio(){
@@ -15,25 +16,41 @@ $(document).ready(function(){
     clone.find(".text-message").append(valore);
     clone.find(".orario-message").append(oraReale());
     $(".contenuto-main").append(clone);
-    setTimeout(rispostaAutomatica,2000);
+    setTimeout(rispostaAutomatica,1000);
   }
 
   function rispostaAutomatica(){
     var cloneDue = $(".template .message").clone();
     cloneDue.addClass("return");
-    cloneDue.find(".text-message").append("Ok");
+    var mex = messaggioRandom();
+    cloneDue.find(".text-message").append(mex);
     cloneDue.find(".orario-message").append(oraReale());
     $(".contenuto-main").append(cloneDue);
   }
 
   function oraReale(){
     var d = new Date();
-    var ore = d.getHours();
-    var minuti = d.getMinutes();
+    var ore = addZero(d.getHours());
+    var minuti = addZero(d.getMinutes());
     var orario = ore + ":" + minuti;
     return orario;
   }
 
+  function addZero(numero) {
+    if (numero<10) {
+      return '0' + numero;
+    }
+    return numero;
+  }
 
+  function numeriRandom(min,max){
+    return Math.floor(Math.random()*(max - min + 1) + min);
+  }
+
+  function messaggioRandom() {
+    var frasi = ['Ciao', 'Non ho capito','Ci vediamo dopo','No','Sono al lavoro','Nope','Yesser'];
+    var numeroRandom = numeriRandom(0,(frasi.length-1));
+    return frasi[numeroRandom];
+  }
 
 });
