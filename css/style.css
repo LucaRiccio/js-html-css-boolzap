@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+.messaggi {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.messaggi.active {
+  display: block;
+}
+
+
 .clearfix:after {
   display: table;
   content: '';
@@ -99,7 +110,7 @@ img {
   position: relative;
 }
 
-#dio {
+#magnifying {
   position: absolute;
   left: 5%;
   padding-left: 5px;
@@ -129,6 +140,15 @@ img {
   padding: 10px 15px;
   border-bottom: 1px solid lightgrey;
   background: white;
+}
+
+.icona:hover{
+  background-color: #c6d6dfc9;
+  cursor: pointer;
+}
+
+.icona.active {
+  background-color: #eaeaea;
 }
 
 .testo-icona {
